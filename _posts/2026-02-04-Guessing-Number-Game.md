@@ -5,6 +5,9 @@ image: "/posts/games_guess_the_number.png"
 tags: [Python]
 ---
 
+
+---
+
 import random
 random.randint(1, 10)
 
@@ -46,4 +49,4 @@ while True:
         break
 
 
-
+---
