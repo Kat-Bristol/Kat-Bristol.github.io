@@ -6,15 +6,18 @@ tags: [Python]
 ---
 
 
----
+'''
 
 import random
 random.randint(1, 10)
+
 LOWER_BOUND = 0
 UPPER_BOUND = 100
 GUESS_LIMIT = 5
 GUESS_COUNTER = 0
+
 CORRECT_NUMBER = random.randint(LOWER_BOUND, UPPER_BOUND)
+
 print(
       f'Try guessing the number that I am thinking. It is between {LOWER_BOUND} and {UPPER_BOUND}. '
       f'Good luck, you have {GUESS_LIMIT} guesses'
@@ -44,6 +47,4 @@ while True:
     if remaining_guesses == 0:
         print(f"Sorry, you're out of guesses. The number you were after was {CORRECT_NUMBER}")
         break
-
-
----
+'''
