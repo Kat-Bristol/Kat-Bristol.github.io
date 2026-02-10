@@ -7,6 +7,7 @@ tags: [Python]
 
 Here is the Python Script for the game
 
+---
 
 import random
 
@@ -48,4 +49,4 @@ while True:
     if remaining_guesses == 0:
         print(f"Sorry, you're out of guesses. The number you were after was {CORRECT_NUMBER}")
         break
-'''
+---
