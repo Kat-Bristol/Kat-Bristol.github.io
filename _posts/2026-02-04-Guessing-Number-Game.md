@@ -5,10 +5,11 @@ image: "/posts/games_guess_the_number.png"
 tags: [Python]
 ---
 
+Here is the Python Script for the game
 
-'''
 
 import random
+
 random.randint(1, 10)
 
 LOWER_BOUND = 0
