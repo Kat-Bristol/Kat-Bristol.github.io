@@ -49,6 +49,9 @@ plt.show()
 ### SAVE THE CROPPED IMAGE TO THE SAME WORKING DIRECTORY
 io.imsave('camaro_cropped.jpg', cropped)
 
+Here is the final cropped image created!
+![alt text](/img/posts/camaro_cropped.jpg "Image-Processing-NumPy")
+
 
 ### Flip our image using the start-stop-step logic. Using -1 where step is will flip the image
 
@@ -63,6 +66,10 @@ plt.imshow(v_flip)
 plt.show()
 
 io.imsave('camaro_v_flip.jpg', v_flip) # saves the image to our working directory
+
+Here is the horizontally flipped image created!
+
+![alt text](/img/posts/camaro_h_flip.jpg "Image-Processing-NumPy")
 
 
 
@@ -96,8 +103,10 @@ plt.imshow(camaro_vposter)
 camaro_hposter = np.hstack((red_array, green_array, blue_array)) # horizontal stack --> landscape poster
 plt.imshow(camaro_hposter)
 
-Here is the cropped image created!
+
+Here is the final poster created!
 
 ![alt text](/img/posts/camaro_cropped.jpg "Image-Processing-NumPy")
+
 
 
