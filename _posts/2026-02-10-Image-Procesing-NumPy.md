@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Image Processing Using NymPy
-image: "/posts/Map.png"
+image: "/posts/camaro.jpg"
 tags: [NumPy, Image Processing]
 ---
 
