@@ -96,5 +96,8 @@ plt.imshow(camaro_vposter)
 camaro_hposter = np.hstack((red_array, green_array, blue_array)) # horizontal stack --> landscape poster
 plt.imshow(camaro_hposter)
 
+Here is the cropped image created!
 
-image: "/posts/camaro_cropped.jpg"
+![alt text](/img/posts/camaro_cropped.jpg "Image-Processing-NumPy")
+
+
