@@ -97,16 +97,19 @@ plt.imshow(blue_array)
 
 ### STACK the 3 newly created arrays to create a poster image
 
-camaro_vposter = np.vstack((red_array, green_array, blue_array)) # vertical stack --> portrait poster
-plt.imshow(camaro_vposter)
 
-camaro_hposter = np.hstack((red_array, green_array, blue_array)) # horizontal stack --> landscape poster
-plt.imshow(camaro_hposter)
+v_poster = np.vstack((red_array, green_array, blue_array)) # vertical stack --> portrait poster
+plt.imshow(v_poster)
+
+h_poster = np.hstack((red_array, green_array, blue_array)) # horizontal stack --> landscape poster
+plt.imshow(h_poster)
+
+io.imsave('camaro_h_poster.jpg', h_poster)
 
 
 Here is the final poster created!
 
-![alt text](/img/posts/camaro_cropped.jpg "Image-Processing-NumPy")
+![alt text](/img/posts/camaro_h_poster.jpg "Image-Processing-NumPy")
 
 
 
