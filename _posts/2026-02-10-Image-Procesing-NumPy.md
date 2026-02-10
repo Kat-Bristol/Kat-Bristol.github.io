@@ -10,7 +10,9 @@ Digital images are seen as arrays. In the first part of this post, I am going to
 ---
 
 import numpy as np
+
 from skimage import io # the io module allows us to read in an image
+
 import matplotlib.pyplot as plt
 
 ### provided our image is located in the same working directory as this script
