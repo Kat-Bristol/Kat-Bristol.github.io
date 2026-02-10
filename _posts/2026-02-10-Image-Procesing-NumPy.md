@@ -46,14 +46,14 @@ plt.imshow(cropped)
 plt.show()
 
 
-### SAVE THE CROPPED IMAGE TO THE SAME WORKING DIRECTORY
+#### SAVE THE CROPPED IMAGE TO THE SAME WORKING DIRECTORY
 io.imsave('camaro_cropped.jpg', cropped)
 
 Here is the final cropped image created!
 ![alt text](/img/posts/camaro_cropped.jpg "Image-Processing-NumPy")
 
 
-### Flip our image using the start-stop-step logic. Using -1 where step is will flip the image
+### We can also FLIP our image using the start-stop-step logic. Using -1 where step is will flip the image
 
 h_flip = camaro[::-1, :, :] # flip the image along an imaginary horizontal binder
 plt.imshow(h_flip)
