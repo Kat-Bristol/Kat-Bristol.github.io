@@ -9,21 +9,27 @@ Here is the Python Script for the game
 
 ---
 
+
+
+
 import random
 
 random.randint(1, 10)
 
 LOWER_BOUND = 0
+
 UPPER_BOUND = 100
+
 GUESS_LIMIT = 5
+
 GUESS_COUNTER = 0
+
 
 CORRECT_NUMBER = random.randint(LOWER_BOUND, UPPER_BOUND)
 
-print(
-      f'Try guessing the number that I am thinking. It is between {LOWER_BOUND} and {UPPER_BOUND}. '
-      f'Good luck, you have {GUESS_LIMIT} guesses'
-      )
+print(f'Try guessing the number that I am thinking. It is between {LOWER_BOUND} and {UPPER_BOUND}. '
+      f'Good luck, you have {GUESS_LIMIT} guesses')
+      
 while True:
     try:
         user_guess = int(input('What is your guess?? '))
