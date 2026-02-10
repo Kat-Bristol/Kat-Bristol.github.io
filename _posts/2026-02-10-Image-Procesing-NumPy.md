@@ -13,7 +13,7 @@ import numpy as np
 from skimage import io # the io module allows us to read in an image
 import matplotlib.pyplot as plt
 
-# provided our image is located in the same working directory as this script
+### provided our image is located in the same working directory as this script
 
 camaro = io.imread('camaro.jpg')
 print(camaro)   # image is actually an array
@@ -24,7 +24,7 @@ plt.imshow(camaro) # looking at the pane 'Plots' we can see the image
 plt.show()
 
 
-# SLICING of the array will result on cropping the image
+### SLICING of the array will result on cropping the image
 #NOTE: the 3rd channel/ axis is the colour channels
 
 cropped = camaro[:, :, :] # no cropping here since we have not specified any slice to crop
@@ -44,11 +44,11 @@ plt.imshow(cropped)
 plt.show()
 
 
-# SAVE THE CROPPED IMAGE TO THE SAME WORKING DIRECTORY
+### SAVE THE CROPPED IMAGE TO THE SAME WORKING DIRECTORY
 io.imsave('camaro_cropped.jpg', cropped)
 
 
-# Flip our image using the start-stop-step logic. Using -1 where step is will flip the image
+### Flip our image using the start-stop-step logic. Using -1 where step is will flip the image
 
 h_flip = camaro[::-1, :, :] # flip the image along an imaginary horizontal binder
 plt.imshow(h_flip)
@@ -64,29 +64,29 @@ io.imsave('camaro_v_flip.jpg', v_flip) # saves the image to our working director
 
 
 
-# Colour Channels (RGB) - By zeroing 2 out of 2 channels every time we can see the 1 remaining channel (R, G or B)
+### Colour Channels (RGB) - By zeroing 2 out of 2 channels every time we can see the 1 remaining channel (R, G or B)
 
-# Create a new array with excatly same dimentions as the original image
+### Create a new array with excatly same dimentions as the original image
 
-# create a new array which only has zero values in it (same shape as our original image)
+### create a new array which only has zero values in it (same shape as our original image)
 red_array = np.zeros(camaro.shape, dtype = 'uint8') 
 red_array[:, :, 0] = camaro [:, :, 0] # imput the RED pixel values only, from the original image)
 plt.imshow(red_array)
 
-# create a new 2nd array which only has zero values in it (same shape as our original image)
+### create a new 2nd array which only has zero values in it (same shape as our original image)
 
 green_array = np.zeros(camaro.shape, dtype = 'uint8')
 green_array[:, :, 1] = camaro [:, :, 1] # imput the GREEN pixel values only, from the original image
 plt.imshow(green_array)
 
-# create a new 3rd array which only has zero values in it (same shape as our original image)
+### create a new 3rd array which only has zero values in it (same shape as our original image)
 
 blue_array = np.zeros(camaro.shape, dtype = 'uint8')
 blue_array[:, :, 2] = camaro [:, :, 2] # imput the BLUE pixel values only, from the original image
 plt.imshow(blue_array)
 
 
-# STACK the 3 newly created arrays to create a poster image
+### STACK the 3 newly created arrays to create a poster image
 
 camaro_vposter = np.vstack((red_array, green_array, blue_array)) # vertical stack --> portrait poster
 plt.imshow(camaro_vposter)
