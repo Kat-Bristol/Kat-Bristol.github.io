@@ -100,4 +100,4 @@ As our p-value of 0.16351152223398197 is HIGHER than our citical value of 0.05, 
 ```
 ---
 
-### *Business Insight / Conclusion following Data Analysis: The Marketing Team can safely utilise the basic (cheaper) mailer as a means to increase signups. Using the colourful more expensive mailer would result in unnecessary costs/expenses for the company.*
+### *Business Insight: The Marketing Team can safely utilise the basic (cheaper) mailer as a means to increase signups. Using the colourful more expensive mailer would result in unnecessary costs/expenses for the company.*
