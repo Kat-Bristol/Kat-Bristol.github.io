@@ -22,7 +22,7 @@ The marketing team is certain that customers who received a mailer (i.e. Groups 
 
 
 
-### IMPORT REQUIRED PACKAGES
+##### IMPORT REQUIRED PACKAGES
 
 import pandas as pd
 from scipy.stats import chi2_contingency as cc
