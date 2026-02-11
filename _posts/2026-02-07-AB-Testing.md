@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Assessing Campaign Performance
-image: "/posts/camaro.jpg"
+image: "/posts/Performance_Marketing.jpg"
 tags: [A/B Testing, Chi-Square, Stats]
 ---
 
