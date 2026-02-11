@@ -37,10 +37,12 @@ campaign_data = pd.read_excel('grocery_database.xlsx', sheet_name = 'campaign_da
 ```
 
 
+
 ##### FILTER THE DATA (i.e take out all rows with CTL group using the .loc method)
 ```
 campaign_data = campaign_data.loc[campaign_data['mailer_type'] != 'Control']
 ```
+
 
 
 ##### SUMMARISE TO GET OUR OBSERVED FREQUENCIES using .crosstab() method
@@ -55,6 +57,7 @@ print(mailer1_signup_rate, mailer2_signup_rate)
 ```
 
 
+
 ##### STATE HYPOTHESES & SET ACCEPTANCE CRITERIA
 ```
 null_hypothesis = 'there is no relationship between mailer type and signup rate. They are independednt.'
@@ -63,17 +66,20 @@ acceptance_criteria = 0.05
 ```
 
 
+
 ##### CALCULATE EXPECTED FREQUENCIES & CHI SQUARE STATISTIC
 ```
 chi2_statistic, p_value, dof, expected_values = cc(observed_values, correction = False)
 print(chi2_statistic, p_value)
 ```
 
+
 ##### FIND THE CRITICAL VALUE FOR THE TEST using the percentage point function
 ```
 critical_value = chi2.ppf(1- acceptance_criteria, dof)
 print(critical_value)
 ```
+
 
 ##### PRINT THE RESULTS/CONCLUSION (Chi Square Statistic)
 ```
@@ -82,6 +88,7 @@ if chi2_statistic >= critical_value:
 else:
     print(f'As our chi-suqre-statistic of {chi2_statistic} is LOWER than our citical value of {critical_value}, we ACCEPT the null hypothesis and conclude that {null_hypothesis}')
  ```   
+
 
 ##### PRINT THE RESULTS/CONCLUSION (p-value)
 ```
