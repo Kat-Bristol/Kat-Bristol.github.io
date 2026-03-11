@@ -56,3 +56,8 @@ while True:
         print(f"Sorry, you're out of guesses. The number you were after was {CORRECT_NUMBER}")
         break
 ---
+
+
+<a href="https://kat-bristol.github.io/Number_Guessing_Game/" target="_blank">
+Play the Number Guessing Game
+</a>
