@@ -225,5 +225,3 @@ style="font-size: 18px; font-weight: bold;">
 Find Prime Numbers
 </a>
 
-
-
