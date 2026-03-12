@@ -217,12 +217,13 @@ However, because we have to sort the list for each iteration of the loop in orde
 
 
 
-In summary, this is a Python algorithm that calculates prime numbers within a user-defined range using set operations and a sieve-style elimination approach. The algorithm was later adapted to run interactively in the browser using JavaScript. You can test it here:
+In summary, this is a Python algorithm that calculates prime numbers within a user-defined range using set operations and a sieve-style elimination approach. The algorithm was later adapted to run interactively in the browser using JavaScript. You can have a go and test it here: 
 
-<a href="https://kat-bristol.github.io/Prime_Number_Finder/" target="_blank">
+<a href="https://kat-bristol.github.io/Finding_Prime_Numbers/" 
+target="_blank" 
+style="font-size: 18px; font-weight: bold;">
 Find Prime Numbers
 </a>
-
 
 
 
